@@ -63,7 +63,7 @@ export default function Home() {
     
     setSummarizingId(paper.id);
     try {
-      const apiUrl = process.env.NEXT_API_URL || 'http://127.0.0.1:8000';
+      const apiUrl = process.env.NEXT_API_URL || 'https://ai-research-assistant-backend-prqb.onrender.com';
       const res = await fetch(`${apiUrl}/papers/summarize`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -91,7 +91,7 @@ export default function Home() {
 
     setIsProcessingPdf(true);
     try {
-      const apiUrl = process.env.NEXT_API_URL || 'http://127.0.0.1:8000';
+      const apiUrl = process.env.NEXT_API_URL || 'https://ai-research-assistant-backend-prqb.onrender.com';
       await fetch(`${apiUrl}/process_pdf`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -114,7 +114,7 @@ export default function Home() {
     setIsChatting(true);
 
     try {
-      const apiUrl = process.env.NEXT_API_URL || 'http://127.0.0.1:8000';
+      const apiUrl = process.env.NEXT_API_URL || 'https://ai-research-assistant-backend-prqb.onrender.com';
       const res = await fetch(`${apiUrl}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

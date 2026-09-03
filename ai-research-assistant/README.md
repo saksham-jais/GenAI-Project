@@ -83,7 +83,7 @@ DATABASE_URL=postgresql://myuser:mypassword@localhost:5432/research_db
 
 **Frontend** (`frontend/.env.local`):
 ```env
-NEXT_API_URL=http://127.0.0.1:8000
+NEXT_API_URL=https://ai-research-assistant-backend-prqb.onrender.com
 ```
 
 ### 3. Start Database
@@ -105,7 +105,7 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Backend runs on: `http://127.0.0.1:8000`
+Backend runs on: `https://ai-research-assistant-backend-prqb.onrender.com`
 
 ### 5. Install & Run Frontend
 
