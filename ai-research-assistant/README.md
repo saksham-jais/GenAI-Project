@@ -7,6 +7,12 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-green)](https://fastapi.tiangolo.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+## 🌐 Live Demo
+
+Use the hosted application at [ai-research-assistant-plum-delta.vercel.app](https://ai-research-assistant-plum-delta.vercel.app/).
+
+The live interface lets you search for academic papers by topic, author, or keywords and explore AI-powered insights. Local setup is only required when running the backend services or developing the application.
+
 ## ✨ Features
 
 - 🔍 **Paper Search** - Search academic papers from OpenAlex API with 200M+ papers
@@ -120,18 +126,26 @@ Frontend runs on: `http://127.0.0.1:3000`
 
 ## 📖 Usage
 
-### Search for Papers
+### Hosted Application
+
+1. Open the [live demo](https://ai-research-assistant-plum-delta.vercel.app/)
+2. Enter a topic, author, or keyword in the search field
+3. Select **Search** to explore available research papers
+
+### Local Application
+
+#### Search for Papers
 
 1. Open `http://127.0.0.1:3000`
 2. Enter a search query (e.g., "microplastic detection", "quantum computing")
 3. Click **Search** to find papers
 
-### Get AI Summary
+#### Get AI Summary
 
 1. Click **AI Summary** on any paper
 2. The Groq AI will generate a plain-language summary in seconds
 
-### Chat with a Paper
+#### Chat with a Paper
 
 1. Click **Chat w/ Paper** on a paper with open-access PDF
 2. Wait for PDF processing to complete
