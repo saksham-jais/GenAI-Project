@@ -48,7 +48,7 @@ export default function Home() {
     setHasSearched(true);
     setLoading(true);
     try {
-      const apiUrl = process.env.NEXT_API_URL || 'http://127.0.0.1:8000';
+      const apiUrl = process.env.NEXT_API_URL || 'https://ai-research-assistant-backend-prqb.onrender.com';
       const res = await fetch(`${apiUrl}/papers/?query=${encodeURIComponent(query)}&limit=10`);
       const data = await res.json();
       setPapers(data.papers || []);
