@@ -44,6 +44,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Health Check Endpoint
+@app.get("/health", tags=["Health"])
+async def health_check():
+    """
+    Health check endpoint for monitoring uptime.
+    Returns 200 OK if the service is running.
+    """
+    return {
+        "status": "healthy",
+        "service": "AI Research Assistant API",
+        "version": "1.0.0"
+    }
+
 # Include API Routers
 app.include_router(papers.router)
 app.include_router(chat.router)
