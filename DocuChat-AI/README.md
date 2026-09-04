@@ -121,7 +121,7 @@ npm run dev
 
 Open `http://localhost:3000` in your browser.
 
-The frontend uses `NEXT_PUBLIC_API_URL` when provided. Otherwise, it connects to `http://localhost:8000`.
+The frontend uses `NEXT_API_URL` when provided. Otherwise, it connects to `http://localhost:8000`.
 
 ### 3. Use the application
 
