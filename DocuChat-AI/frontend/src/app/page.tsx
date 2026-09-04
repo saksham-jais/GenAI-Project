@@ -5,7 +5,7 @@
 
   type DocumentItem = { id: string; filename: string; pages: number; chunks: number };
   type Message = { role: "user" | "assistant"; content: string; sources?: { filename: string; page: number }[] };
-  const API_URL = process.env.NEXT_API_URL ?? "http://localhost:8000";
+  const API_URL = process.env.NEXT_API_URL ?? "https://docuchat-ai-e6yf.onrender.com";
 
   export default function Home() {
   const [documents, setDocuments] = useState<DocumentItem[]>([]);

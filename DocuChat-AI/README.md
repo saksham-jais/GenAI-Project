@@ -6,6 +6,11 @@ DocuChat AI lets you upload a PDF, extract and organize its content, create sema
 
 The application runs locally. Documents and embeddings are stored on your machine using **ChromaDB**.
 
+## Live Application
+
+- Frontend: [docuchatai-three.vercel.app](https://docuchatai-three.vercel.app/)
+- Backend API: [docuchat-ai-e6yf.onrender.com](https://docuchat-ai-e6yf.onrender.com/)
+
 ## What It Does
 
 1. Upload a PDF from the web interface.
@@ -122,6 +127,12 @@ npm run dev
 Open `http://localhost:3000` in your browser.
 
 The frontend uses `NEXT_API_URL` when provided. Otherwise, it connects to `http://localhost:8000`.
+
+For the hosted frontend, set `NEXT_API_URL` to:
+
+```text
+https://docuchat-ai-e6yf.onrender.com
+```
 
 ### 3. Use the application
 
