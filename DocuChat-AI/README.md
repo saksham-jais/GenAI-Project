@@ -99,6 +99,16 @@ uvicorn main:app --reload
 
 The API runs at `http://localhost:8000`.
 
+### Production deployment on Render
+
+Use the included `render.yaml` Blueprint, or set the Render service start command to:
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port $PORT
+```
+
+Render requires the service to bind to `0.0.0.0` and to use its `$PORT` value. The local filesystem persistence used by this project is suitable for a single-instance demo only; configure durable external storage before treating the deployment as production-ready.
+
 ### 2. Start the frontend
 
 Open a second PowerShell terminal:
