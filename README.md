@@ -1,11 +1,22 @@
-# GenAI Project
+# GenAI Projects
 
-This repository contains the **AI Research Assistant**, an application for discovering, analyzing, and chatting with academic papers using AI-powered insights.
+This repository contains two AI-powered applications for research and document understanding.
 
-## Live Demo
+## Projects
 
-Try the hosted application: [AI Research Assistant](https://ai-research-assistant-plum-delta.vercel.app/)
+### AI Research Assistant
 
-## Project
+An application for discovering, analyzing, and chatting with academic papers. It searches millions of papers, generates AI-powered summaries, extracts research topics, tracks citations, and supports PDF conversations using retrieval-augmented generation (RAG).
 
-The application is located in [ai-research-assistant](ai-research-assistant/). See its [README](ai-research-assistant/README.md) for features, architecture, local setup, and API details.
+- Project: [ai-research-assistant](ai-research-assistant/)
+- Details: [AI Research Assistant README](ai-research-assistant/README.md)
+- Live application: [ai-research-assistant-plum-delta.vercel.app](https://ai-research-assistant-plum-delta.vercel.app/)
+
+### DocuChat AI
+
+A document question-answering application that lets users upload PDFs, extract and organize their content, generate semantic embeddings, and retrieve relevant passages through a chat interface. Documents and embeddings are stored locally with ChromaDB.
+
+- Project: [DocuChat-AI](DocuChat-AI/)
+- Details: [DocuChat AI README](DocuChat-AI/README.md)
+- Live frontend: [docuchatai-three.vercel.app](https://docuchatai-three.vercel.app/)
+- Live backend API: [docuchat-ai-e6yf.onrender.com](https://docuchat-ai-e6yf.onrender.com/)
